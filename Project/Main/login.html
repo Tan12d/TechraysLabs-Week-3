@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#1B3B6F]">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="w-[90%] max-w-[450px] p-4 bg-white rounded-2xl lg:rounded-3xl">
+            <h1 class="font-bold text-5xl text-center pt-6 pb-6 mt-2">Login Form</h1>
+
+            <!-- <div class="grid bg-[yellow] justify-center w-full min-w-[220px] max-w-[500px]"> -->
+                <form action="" class="px-6">
+                    <label class="block">
+                        <span class="block text-md max-sm:text-lg font-medium  text-slate-900 tracking-wider">
+                          Name
+                        </span>
+                        <input type="text" name="name" class="mt-1 px-4 py-2 bg-white border shadow-sm border-slate-600 max-sm:border-slate-600 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="John Doe" required>
+                    </label>
+
+
+                    <label class="block mt-8">
+                        <span class="block text-md max-sm:text-lg font-medium  text-slate-900 tracking-wide">
+                          Email
+                        </span>
+                        <input type="email" name="email" class="mt-1 px-4 py-2 bg-white border shadow-sm border-slate-600 max-sm:border-slate-600 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" required>
+                    </label>
+
+                    <label class="block mt-8">
+                        <span class="block text-md max-sm:text-lg font-medium  text-slate-900 tracking-wide">
+                          Phone Number
+                        </span>
+                        <input type="tel" name="phone" class="mt-1 px-4 py-2 bg-white border shadow-sm border-slate-600 max-sm:border-slate-600 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="1234567890" required>
+                    </label>
+
+                    <button type="submit" class="bg-[#065A82] text-white w-full rounded-lg mt-8 text-md p-4 max-sm:p-4 font-bold tracking-widest cursor-pointer" onclick="validateForm()">
+                        SAVE
+                    </button>
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <script src="script1.js">
+
+    </script>
+</body>
+
+</html>

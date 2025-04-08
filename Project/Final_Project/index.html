@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="bg-[#1B3B6F]">
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="p-6 md:p-8 w-[90%] max-w-[450px] h-[55%] bg-white rounded-2xl lg:rounded-3xl">
+            <h1 class="font-bold text-5xl text-center p-8 mt-2">Quiz App</h1>
+            <p class="text-center font-semibold text-3xl mt-5">Select Category</p>
+
+            <div class="grid grid-cols-2 gap-4 mt-6">
+                <!-- First Column (6 parts) -->
+                <div class="grid">
+                    <button id="btn1" class="px-3 py-2 w-full max-w-[200px] outline outline-3 outline-offset-2 outline-[#1B3B6F] rounded-lg flex items-center justify-center bg-[#9EB3C2] text-[#1B3B6F] cursor-pointer">
+                        <p class="font-bold text-lg">Programming</p>
+                    </button>
+                </div>
+            
+                <!-- Second Column (6 parts) -->
+                <div class="grid">
+                    <button id="btn2" class="px-3 py-2 w-full min-w-120px max-w-[300px] px-5 py-3 outline outline-3  outline-slate-400 border-md rounded-lg flex items-center justify-center hover:text-[#1B3B6F] hover:bg-[#9EB3C2] hover:outline-[#1B3B6F] hover:outline-offset-2 hover:text-[#1B3B6F] cursor-pointer">
+                        <p class="font-bold md:text-lg">Development</p>
+                    </button>    
+                </div>
+            </div>
+
+
+
+            <!-- <div class="grid grid-cols-2 justify-between items-center  mx-auto max-w-300px mt-[7vw] text-center font-normal">
+                <button id="btn1" class="w-[50%] min-w-[120px] max-w-[300px] px-5 py-3 outline outline-3 outline-offset-2 outline-[#1B3B6F] rounded-lg flex items-center justify-center bg-[#9EB3C2] text-[#1B3B6F] cursor-pointer">
+                    <p class="font-bold md:text-lg text-sm">Programming</p>
+                </button>
+                <button id="btn2" class="w-[50%] min-w-120px max-w-[300px] px-5 py-3 outline outline-3  outline-slate-400 border-md rounded-lg flex items-center justify-center hover:text-[#1B3B6F] hover:bg-[#9EB3C2] hover:outline-[#1B3B6F] hover:outline-offset-2 hover:text-[#1B3B6F] cursor-pointer">
+                    <p class="font-bold md:text-lg text-sm">Development</p>
+                </button>                
+            </div> -->
+
+            <p class="text-center font-semibold text-3xl mt-8">No. of Questions</p>
+            <div class="flex mx-auto justify-center mt-4">
+                <button class="px-[2vw] py-2 min-w-[50px] max-w-[200px] h-full px-4 py-2 outline outline-3 outline-offset-2 outline-[#1B3B6F] rounded-xl bg-[#9EB3C2] text-[#1B3B6F] cursor-pointer">
+                    <p class="font-bold text-2xl">05</p>
+                </button>
+            </div>
+            <!-- <div class="grid justify-center w-full mx-auto max-w-400px gap-7 text-center font-normal">
+                <button class="w-[22%] min-w-50px max-w-[150px] h-[23%] px-4 py-2 outline outline-3 outline-offset-2 outline-[#1B3B6F] rounded-xl flex items-center justify-center bg-[#9EB3C2] text-[#1B3B6F] cursor-pointer -mt-[7vw]">
+                    <p class="font-bold text-2xl">10</p>
+                </button>
+            </div> -->
+
+            <div class="grid justify-center w-full mx-auto max-w-400px mt-10 text-center font-normal">
+                <button class="w-full min-w-[200px] max-w-full py-3 px-2 rounded-xl bg-[#065A82] text-white cursor-pointer mt-[clamp(8px, 2vw, 24px)]">
+                    <p class="font-bold text-2xl tracking-wider"><a href="/pages/login.html">START</a></p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script/script_index.js"></script>
+</body>
+
+</html>

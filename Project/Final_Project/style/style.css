@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
+@media (max-wdth:880px) {
+    .btn {
+        padding: 8px 0px;
+    }
+}
+
+.correct {
+    background-color: #9AEABC;
+}
+
+.incorrect {
+    background-color: #FFA8A8;
+}

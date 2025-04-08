@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .option {
+                @apply w-full bg-[#9EB3C2] text-left px-4 rounded-xl py-3 enabled:hover:bg-slate-700 enabled:hover:text-white disabled:cursor-no-drop 
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#1B3B6F]">
+    <div class="grid h-screen w-screen justify-center items-center oveflow-hidden">
+    
+        <div class="grid h-full w-screen items-center oveflow-hidden">
+            <div class="mx-auto w-[70%] max-w-[31.25rem] min-h-[18.75rem] bg-white rounded-2xl lg:rounded-3xl flex flex-col justify-between">
+                <div class="rounded-t-2xl m-0 pl-7 pt-4 grid items-start justify-between shadow-lg">
+                    <h1 class="font-extrabold text-4xl text-center">Quiz App</h1>
+                </div>
+            
+                <div class="px-7 mt-4 grid mb-2">
+                    <h2 id="question" class="text-[1.6em] font-bold"></h2>
+                    <div id="answers" class="mt-4 font-medium text-[1em] space-y-4">
+                        <button id="opt1" class="option">Removes duplicate elements from an array</button>
+                        <button id="opt2" class="option">Filters elements in an array</button>
+                        <button id="opt3" class="optio">Sorts an array</button>
+                        <button id="opt4" class="option">Iterates through each element in an array</button>
+                    </div>
+                </div>
+            
+                <hr class="border-slate-300 shadow">
+            
+                <div class="grid justify-center px-10 pb-2 mt-2 ">
+                    <button type="submit" id="next-btn" class="submit-btn bg-[#065A82] w-full min-w-[9.375rem] max-w-[25rem] text-white rounded-lg text-sm py-3 px-4 font-bold tracking-widest cursor-pointer hidden">
+                        <a href="question_2.html">Next</a>
+                    </button>
+                </div>
+            </div>
+                </div>
+
+
+                <script src="questions.js"></script>
+
+    </div>
+
+    <!--
+    <script>
+        // document.getElementById("opt1").addEventListener("click", function() {
+        //     let opt1 = document.getElementById("opt1");
+
+        //     opt1.style.backgroundColor = "lightgreen";
+        // })
+
+
+        // document.getElementById("opt2").addEventListener("click", function() {
+        //     let opt2 = document.getElementById("opt2");
+
+        //     opt2.style.backgroundColor = "lightgreen";
+        // })
+
+        // document.getElementById("opt3").addEventListener("click", function() {
+        //     let opt3 = document.getElementById("opt3");
+
+        //     opt3.style.backgroundColor = "lightgreen";
+        // })
+
+        // document.getElementById("opt4").addEventListener("click", function() {
+        //     let opt4 = document.getElementById("opt4");
+
+        //     opt4.style.backgroundColor = "lightgreen";
+        // })
+
+
+        document.querySelectorAll(".option").forEach(option => {
+    option.addEventListener("click", function() {
+        // Reset all options to original background color
+        document.querySelectorAll(".option").forEach(opt => opt.style.backgroundColor = "#9EB3C2");
+
+        // Set the selected option to green
+        this.style.backgroundColor = "#3fcb7c";
+        this.style.color = "white";
+
+        // Show the submit button
+        document.querySelector(".submit-btn").classList.remove("hidden");
+    });
+});
+    </script>
+-->
+
+</body>
+</html>

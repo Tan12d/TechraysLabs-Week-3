@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">This is me</p>
+
+    <button onclick="document.getElementById('demo').innerHTML='Hello World!'">Clcik me!</button>
+
+    <button onclick="document.getElementById('demo').style.fontSize='35px'">Increase the font size</button>
+
+    <button onclick="document.getElementById('demo').style.display = 'none';">Hide it</button>
+
+    <button onclick="document.getElementById('demo').style.visibility = 'hidden';">Hide visibly</button>
+
+    <button onclick="myFunction()">Change the color</button>
+
+    <br/><br/>
+
+    <div id="box" style="height: 200px; width: 200px; background-color: aqua;"></div>
+
+    <br/><br/>
+
+    <button onclick="myFunc()">Change the color of the box</button>
+
+
+    <!-- Events -->
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+
+    <button onclick="displayDate()">The time is?</button>
+
+
+
+
+
+
+
+    <script src="./script/script.js"></script>
+    
+    <script>
+        function myFunction() {
+            document.getElementById('demo').style.color = 'red';
+        }
+
+        function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+    </script>
+
+</body>
+</html>
